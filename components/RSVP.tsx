@@ -7,12 +7,12 @@ const specialGuests = [
   "Mr. Ramesh Lal & Mrs. Sonam Chandwani",
   "Mr. Raj Kumar & Mrs. Laveena Bambani",
   "Mr. Suresh & Mrs. Kiran Mirchandani",
-  "Mrs. Rukmani, Mr. Deepal & Mrs. Vidhi Sadnani",
+  "Mrs. Rukmani, Mr. Deepak & Mrs. Vidhi Sadnani",
   
 ];
 
 const sweetGuests = [
-  "Amayra",
+  "Amyra",
   "Yuvaan",
   "Amoha",
   "Shivaay",

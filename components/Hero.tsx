@@ -26,7 +26,7 @@ const petals = useMemo(
   
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black">
+    <section className="relative min-h-screen w-full overflow-hidden bg-black">
       <motion.img
         src="/images/hero.png"
         alt="Ankit & Bhumi"
@@ -79,8 +79,8 @@ to-black/55" />
 />
         ))}
       </div>
-      <div
-       className="
+   <div
+className="
 relative
 z-10
 flex
@@ -88,8 +88,6 @@ h-full
 flex-col
 items-center
 justify-center
--translate-y-40
-md:-translate-y-10
 px-6
 text-center
 ">
@@ -150,38 +148,26 @@ text-center
         </motion.h1>
 
        <motion.div
-className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center"
-animate={{
-y:[0,8,0]
-}}
-transition={{
-duration:2,
-repeat:Infinity
-}}
+  className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center"
+  animate={{ y: [0, 10, 0] }}
+  transition={{
+    duration: 2,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
 >
+  {/* Gold Arrow */}
+  <div className="text-[#D6B772] text-3xl leading-none">
+    ❦
+  </div>
 
-<p
-className="
-uppercase
-tracking-[0.35em]
-text-[11px]
-text-[#F8F3E7]/60
-"
->
+  {/* Vertical Line */}
+  <div className="mt-2 w-px h-10 bg-gradient-to-b from-[#D6B772] to-transparent" />
 
-Scroll
-
-</p>
-
-<div
-className="
-mt-4
-w-px
-h-10
-bg-[#C6A664]
-"
-/>
-
+  {/* Small Arrow */}
+  <div className="mt-1 text-[#D6B772] text-xl">
+    ↓
+  </div>
 </motion.div>
       </div>
     </section>

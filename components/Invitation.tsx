@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Invitation() {
   return (
-    <section className="relative overflow-hidden bg-[#F8F3E7] py-0 md:py-20 px-6">
+    <section className="relative overflow-hidden bg-[#F8F3E7] py-10 md:py-20 px-6">
 
       {/* Background Glow */}
       <div className="absolute inset-0 flex justify-center">
@@ -45,7 +45,7 @@ export default function Invitation() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className="mt-12 font-serif text-5xl md:text-6xl text-[#6E4F2A]"
+          className="mt-8 font-serif text-5xl md:text-6xl text-[#6E4F2A]"
         >
           You're Invited
         </motion.h2>
@@ -75,7 +75,7 @@ export default function Invitation() {
             scale: 1.02,
             y: -8,
           }}
-          className="mt-20"
+          className="mt-12"
         >
           <div className="
 rounded-[32px]
