@@ -7,8 +7,11 @@ const specialGuests = [
   "Mr. Ramesh Lal & Mrs. Sonam Chandwani",
   "Mr. Raj Kumar & Mrs. Laveena Bambani",
   "Mr. Suresh & Mrs. Kiran Mirchandani",
-  "Mrs. Rukmani, Mr. Deepak & Mrs. Vidhi Sadnani",
-  
+];
+
+const maternalGuests = [
+  "Mrs. Rukmani",
+  "Mr. Deepak & Mrs. Vidhi Sadnani",
 ];
 
 const sweetGuests = [
@@ -17,7 +20,7 @@ const sweetGuests = [
   "Amoha",
   "Shivaay",
   "Jivaansh",
-  "Lakshay",
+  "Lakshaya",
   "Mahira"
 ];
 
@@ -70,7 +73,7 @@ export default function RSVP() {
   <div className="rounded-[40px] border border-[#D6B772] bg-white px-8 py-14 md:px-16 shadow-xl">
 
     <h3 className="text-center font-serif text-4xl text-[#8A6A3A]">
-      Our Beloved Guests
+      Our Cherished Family
     </h3>
 
     <div className="w-24 h-px bg-[#C6A664] mx-auto my-6" />
@@ -114,14 +117,64 @@ export default function RSVP() {
 
   </div>
 ))}
-<div className="text-center mt-12">
-  <div className="w-20 h-px bg-[#E6D3A3] mx-auto mb-6" />
+{/* Jaswani Family */}
+<div className="text-center mt-10">
+
 
   <p className="font-serif italic text-2xl leading-9 text-[#8A6A3A]">
     Together with all the esteemed members
     <br />
     of the Jaswani Family
   </p>
+
+</div>
+
+{/* Maternal Side */}
+
+<div className="mt-16 text-center">
+
+  <div className="w-24 h-px bg-[#C6A664] mx-auto mb-6" />
+
+  <h4 className="font-serif text-3xl text-[#8A6A3A]">
+    Maternal Side
+  </h4>
+
+  <div className="w-16 h-px bg-[#E6D3A3] mx-auto mt-6 mb-8" />
+
+  <div className="space-y-8">
+
+    {maternalGuests.map((guest) => (
+      <div key={guest}>
+
+        <p className="text-[#C6A664] text-xl mb-3">
+          ❦
+        </p>
+
+        <p className="font-serif text-2xl leading-10 text-[#6B4E2E]">
+          {guest}
+        </p>
+
+        <div className="w-16 h-px bg-[#E6D3A3] mx-auto mt-6" />
+
+      </div>
+    ))}
+
+  </div>
+
+  <div className="mt-10">
+
+    <p className="font-serif italic text-2xl leading-9 text-[#8A6A3A]">
+      Together with all the esteemed members
+      <br />
+      of the Sadnani Family
+    </p>
+
+  </div>
+
+</div>
+<div className="text-center mt-12">
+  <div className="w-20 h-px bg-[#E6D3A3] mx-auto mb-6" />
+
 </div>
 
     </div>
@@ -143,7 +196,7 @@ export default function RSVP() {
   <div className="rounded-[40px] border border-[#D6B772] bg-white px-8 py-12 md:px-16 shadow-xl">
 
     <h3 className="text-center font-serif text-4xl text-[#8A6A3A]">
-      Our Little Guests
+      Our Little Hosts
     </h3>
 
     <div className="w-24 h-px bg-[#C6A664] mx-auto my-6" />

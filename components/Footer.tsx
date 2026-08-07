@@ -158,7 +158,17 @@ sepia
           With Love,
 The Gangwani & Jaswani Families
         </p>
-
+<div className="mt-8">
+  <p className="text-[#7A6954] text-lg">
+    Contact No:
+    <a
+      href="8003098169"
+      className="text-[#6B4E2E] font-semibold hover:text-[#C6A664] transition"
+    >
+      {" "}8003098169
+    </a>
+  </p>
+</div>
         {/* Ornament */}
 
         <img
